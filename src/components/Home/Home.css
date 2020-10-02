@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+
+.Welcome{
+    font-size: 150px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 8px #747474;
+}
+
+
+.Back{
+    background-image: url("back3.png");
+    /* background: linear-gradient(to right, #b993d6, #8ca6db); */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* defines the animation */
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .first {
+    width: 170px;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+            animation: fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  .second {
+    width: 170px;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+            animation: fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 2.2s;
+            animation-delay: 2.2s;
+  }
+  .third {
+    width: 170px;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+            animation: fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 3.4s;
+            animation-delay: 3.4s;
+  }
+  .fourth {
+    width: 170px;
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+            animation: fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 4.6s;
+            animation-delay: 4.6s;
+  }
+  /* .fifth {
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+            animation: fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 9s;
+            animation-delay: 9s;
+  }
+  .sixth {
+    opacity: 0;
+    -webkit-animation: fadeInUp 1s ease-in-out 0s forwards;
+            animation: fadeInUp 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 11s;
+            animation-delay: 11s;
+  } */

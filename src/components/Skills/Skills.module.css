@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.5;
+}
+body {
+  background: #1c1c1c;
+} */
+.customAccordion {
+    height: 500px;
+  background: #8A6552;
+  color: #FFFFFF;
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 2rem;
+}
+.customAccordion > .item {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+.customAccordion > .item:last-of-type {
+  background: #462521;
+  text-align: center;
+  border-radius: .5rem;
+}
+.customAccordion > .item:last-of-type > .icon {
+  color: #FFFFFF;
+}
+.customAccordion > .item:nth-of-type(6) {
+  padding-bottom: 2rem;
+}
+.customAccordion > .item > .icon {
+  color: #462521;
+  font-size: 2rem;
+}
+.customAccordion > .item > .title {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 800px) and (min-height: 270px) {
+  .customAccordion {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    max-height: 1000px;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .customAccordion > .item {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    transform-origin: 0 50%;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .customAccordion > .item:hover:not(:last-of-type) {
+    transform: scaleX(2) translateX(-1px);
+    box-shadow: 0 0 3rem #301916;
+    background: #8A6552;
+    border-color: transparent;
+  }
+  .customAccordion > .item:hover + .item {
+    opacity: .1;
+  }
+  .customAccordion > .item:hover + .item:last-of-type {
+    opacity: .1;
+    background: #8A6552;
+  }
+  .customAccordion > .item:not(:last-of-type) {
+    border-right: 1px solid #462521;
+  }
+  .customAccordion > .item:last-of-type {
+    background: #462521;
+    width: 25%;
+    border-radius: 0;
+  }
+  .customAccordion > .item:last-of-type .heart-icon {
+    font-size: 6rem;
+  }
+  .customAccordion > .item:hover:last-of-type .heart-icon {
+    transform: scale(2);
+  }
+  .customAccordion > .item:last-of-type > .title {
+    transform: rotate(0) translateX(-50%) translateY(-2.5rem);
+    padding: 0;
+    text-align: center;
+  }
+  .customAccordion > .item:last-of-type > .content {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .customAccordion > .item:hover:not(:last-of-type) > .icon {
+    transform: scaleX(0.5);
+  }
+  .customAccordion > .item:hover:not(:last-of-type) > .title {
+    transform: scaleX(0.5) translateX(-50%);
+    background: #CA2E55;
+    text-align: center;
+    padding: 0;
+  }
+  .customAccordion > .item:hover:not(:last-of-type) > .title > .text {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .customAccordion > .item:hover:not(:last-of-type) > .content {
+    opacity: 1;
+  }
+  .customAccordion > .item > .icon {
+    font-weight: 700;
+    font-size: 2rem;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    color: #FFFFFF;
+  }
+  .customAccordion > .item > .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1.5rem;
+    width: 200%;
+    text-align: left;
+    transform-origin: 0 50%;
+    transform: rotate(-90deg);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    font-size: 1.2rem;
+  }
+  .customAccordion > .item > .title > .text {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+  }
+  .customAccordion > .item > .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%) scaleX(0.5);
+    transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+    opacity: 0;
+    padding: 1rem;
+    pointer-events: none;
+  }
+}
+.heart-icon {
+  color: #CA2E55;
+  font-size: 3rem;
+  transition: all 0.3s cubic-bezier(0.8, 0.16, 0.42, 0.89);
+}
+
+.Image{
+    /* margin: auto; */
+    margin-top: 10px;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
