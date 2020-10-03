@@ -1,4 +1,5 @@
 import React from 'react'
+import SideMenu from '../UI/SideMenu/SideMenu'
 
 import classes from './Skills.module.css';
 
@@ -30,12 +31,13 @@ import esp from '../../assets/logos/esp8266.png'
 const Skills = () => {
     return(
         
-        <div>
-            <div className={classes.customAccordion} style={{height:'500px', marginTop:'100px'}}>
+        <SideMenu>
+            <div style={{height:'100%'}}>
+            <div className={classes.customAccordion} style={{height:'50%', marginTop:'100px', border:'2px solid black'}}>
     
                 <AccPage title='Programming Languages'>
                     <Container>
-                        <Row>
+                        <Row style={{marginBottom:'30px'}}>
                             <Col>
                                 <Logo image={python} name='Python'/>
                             </Col>
@@ -43,7 +45,7 @@ const Skills = () => {
                                 <Logo image={java} name='Java'/>
                             </Col>
                         </Row>
-                        <Row>
+                        <Row style={{marginBottom:'30px'}}>
                             <Col>
                                 <Logo image={cpp} name='C++'/>
                             </Col>
@@ -52,7 +54,7 @@ const Skills = () => {
                             </Col>
                         </Row>
 
-                        <Row>
+                        <Row style={{marginBottom:'30px'}}>
                             <Col>
                                 <Logo image={arduino} name='Arduino'/>
                             </Col>
@@ -65,7 +67,7 @@ const Skills = () => {
                 </AccPage>
 
                 <AccPage title='Development'>
-                    <Row>
+                    <Row style={{marginBottom:'30px'}}>
                         <Col>
                             <Logo image={html} name='HTML5'/>
                         </Col>
@@ -73,7 +75,7 @@ const Skills = () => {
                             <Logo image={css3} name='CSS3'/>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row style={{marginBottom:'30px'}}>
                         <Col>
                             <Logo image={django} name='Django'/>
                         </Col>
@@ -81,7 +83,7 @@ const Skills = () => {
                             <Logo image={react} name='react'/>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row style={{marginBottom:'30px'}}>
                         <Col>
                             <Logo image={redux} name='redux'/>
                         </Col>
@@ -92,7 +94,7 @@ const Skills = () => {
                 </AccPage>
 
                 <AccPage title='Hardware Programming'>
-                    <Row>
+                    <Row style={{marginBottom:'30px'}}>
                         <Col>
                             <Logo image={arduinob} name='Arduino'/>
                         </Col>
@@ -100,7 +102,7 @@ const Skills = () => {
                             <Logo image={raspi} name='Raspberry Pi 3'/>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row style={{marginBottom:'30px'}}>
                         <Col>
                             <Logo image={esp} name='ESP 8266' />
                         </Col>
@@ -120,12 +122,13 @@ const Skills = () => {
                     <div className={classes.content} style={{fontSize:'60px'}}>
                         Skills
                         <br />
-                        <MDBIcon style={{marginTop:'50px'}} size='1x' icon="hand-point-left" />
+                        <MDBIcon style={{marginTop:'50px'}} size='1x' far icon="arrow-alt-circle-left" />
                     </div>
                 </div>
     
             </div>
-        </div>
+            </div>
+        </SideMenu>
     )
 }
 

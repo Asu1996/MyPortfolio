@@ -10,9 +10,10 @@ html {
 body {
   background: #1c1c1c;
 } */
+
 .customAccordion {
-    height: 500px;
-  background: #8A6552;
+    /* height: 500px; */
+  background: #75a9da;
   color: #FFFFFF;
   font-family: 'Playfair Display', serif;
   padding-bottom: 2rem;
@@ -23,7 +24,7 @@ body {
   max-width: 30rem;
 }
 .customAccordion > .item:last-of-type {
-  background: #462521;
+  background: #1346d3;
   text-align: center;
   border-radius: .5rem;
 }
@@ -34,7 +35,7 @@ body {
   padding-bottom: 2rem;
 }
 .customAccordion > .item > .icon {
-  color: #462521;
+  color: #75a9da;
   font-size: 2rem;
 }
 .customAccordion > .item > .title {
@@ -63,7 +64,7 @@ body {
   .customAccordion > .item:hover:not(:last-of-type) {
     transform: scaleX(2) translateX(-1px);
     box-shadow: 0 0 3rem #301916;
-    background: #8A6552;
+    background: #75a9da;
     border-color: transparent;
   }
   .customAccordion > .item:hover + .item {
@@ -77,7 +78,7 @@ body {
     border-right: 1px solid #462521;
   }
   .customAccordion > .item:last-of-type {
-    background: #462521;
+    background: #1346d3;
     width: 25%;
     border-radius: 0;
   }

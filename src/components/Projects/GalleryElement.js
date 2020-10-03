@@ -1,11 +1,8 @@
 import React from "react";
 import Container from 'react-bootstrap/Container';
 import { MDBView} from "mdbreact";
-import { Button, Image, Modal } from 'semantic-ui-react'
 
-import classes from './GalleryElement.module.css'
-
-
+import MyModal from '../UI/MyModal/MyModal'
 
 
 class HoverPage extends React.Component {
@@ -16,10 +13,11 @@ class HoverPage extends React.Component {
 
   render() {
     return (
-      <Container style={{marginTop:'20px'}}>
+      <Container style={{marginTop:'25px'}}>
         
         <MDBView hover zoom>
           <img
+          style={{ cursor:'pointer'}}
             src={this.props.mdimage}
             className="img-fluid"
             alt=""
@@ -29,26 +27,15 @@ class HoverPage extends React.Component {
         
         <p style={{textAlign:'center', marginTop:'15px', fontSize:'20px'}}>{this.props.title}</p>
 
-        <Modal
-          onClose={() => {this.setState({open:false})}}
-          onOpen={() => {this.setState({open:true})}}
+        <MyModal 
+          title={this.props.title}
+          image={this.props.mdimage}
           open={this.state.open}
-          className={classes.setMod}
-        >
-          <Modal.Header>Upload image</Modal.Header>
-          <Modal.Content image>
-            <Image size='medium' src='/images/wireframe/image-square.png' wrapped />
-            <Modal.Description>
-              <p>Would you like to upload this image?</p>
-            </Modal.Description>
-          </Modal.Content>
-          <Modal.Actions>
-            <Button onClick={() => {this.setState({open:false})}}>Cancel</Button>
-            <Button onClick={() => {this.setState({open:false})}} positive>
-              Ok
-            </Button>
-          </Modal.Actions>
-        </Modal>
+          toToggle={() => {this.setState({open:!this.state.open})}}
+          description={this.props.description}
+          githubLink={this.props.githubLink}
+          webLink={this.props.webLink}
+        />
 
       </Container>
     );
